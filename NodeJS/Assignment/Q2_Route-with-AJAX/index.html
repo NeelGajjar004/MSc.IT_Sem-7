@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question :- 2</title>
+</head>
+<body>
+    <h2>NEEL GAJJAR</h2><br><br>
+    <button id="gethellobtn">Get Message</button><br><br>
+    <div id="res">
+        <script>
+            const gethellobtn = document.getElementById('gethellobtn');
+            const resdiv = document.getElementById('res');
+
+            gethellobtn.addEventListener('click',() => {
+                fetch('/gethello')
+                    .then(
+                        res => res.text()
+                            .then(data => {
+                                console.log(data);
+                                resdiv.innerText += "\n"+data;
+                            }));
+            });
+        </script>
+    </div>
+</body>
+</html>
