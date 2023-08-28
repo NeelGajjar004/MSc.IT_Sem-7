@@ -20,7 +20,7 @@ Practical Assignment-1
 
 7. Write a program to promisify fs.unlink function and call it.
 
-8. Fetch data of google page using note-fetch using async-await model.
+8. Fetch data of google page using node-fetch using async-await model.
 
 9. Write a program that connect Mysql database, Insert a record in employee table and display all records in employee table using promise based approach.
 

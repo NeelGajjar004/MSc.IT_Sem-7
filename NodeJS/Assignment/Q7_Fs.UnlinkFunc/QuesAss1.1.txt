@@ -1,0 +1,13 @@
+Practical Assignment-1
+
+6. Write a program to extract a zip file.
+
+7. Write a program to promisify fs.unlink function and call it.
+
+8. Fetch data of google page using node-fetch using async-await model.
+
+9. Write a program that connect Mysql database, Insert a record in employee table and display all records in employee table using promise based approach.
+
+10. Set a server script, a test script and 3 user defined scripts in package.json file in your nodejs application.
+
+11. Develop an application to show live cricket score.
