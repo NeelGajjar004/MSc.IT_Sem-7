@@ -1,3 +1,4 @@
+// Q6. Write a program to extract a zip file.
 const zlib = require('zlib');
 const fs = require('fs');
 

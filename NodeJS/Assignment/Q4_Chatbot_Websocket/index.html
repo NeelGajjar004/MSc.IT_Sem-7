@@ -7,12 +7,12 @@
         var ws = new WebSocket("ws://localhost:8000");
         ws.addEventListener("message", (ans) => {
             var msg = ans.data;
-            document.getElementById("chatlog").innerHTML += "<br> Bot ::-   " + msg;
+            document.getElementById("chatlog").innerHTML += "<br> <strong>Chat-Bot</strong> : " + msg;
         });
 
         function sendMessage() {
             var message = document.getElementById("message").value;
-            document.getElementById("chatlog").innerHTML += "<br> You ::-   " + message;
+            document.getElementById("chatlog").innerHTML += "<br> <strong>You</strong> : " + message;
             ws.send(message);
             document.getElementById("message").value = "";
         }
