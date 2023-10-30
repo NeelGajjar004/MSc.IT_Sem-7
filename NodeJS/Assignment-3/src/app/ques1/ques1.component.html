@@ -1,0 +1,28 @@
+<div>
+    <p>Integer := {{ IntValue }}</p>
+    <p>String := {{ StringValue }}</p>
+    <p>Date := {{ DateValue | date }}</p>
+    Department := 
+    <select [value]="'Department'">
+        <option value="">Select Department</option>
+        <option value="{{dept}}" *ngFor="let dept of ArrayValue">{{dept}}</option>
+    </select>
+    <ul>
+        <li *ngFor="let dept of ArrayValue">{{ dept }}</li>
+    </ul>
+    <br>
+    Select Input Option := 
+    <select name="inputoption" [(ngModel)] = "inputoption">
+        <option value="">Select Field</option>
+        <option value="Textbox">Textbox</option>
+        <option value="Textarea">Textarea</option>
+     </select><br><br>
+
+    <div *ngIf="inputoption === 'Textbox'">
+        TextBox := <input type="text" placeholder="Enter Text in TextBox">
+    </div><br>
+    <div *ngIf="inputoption === 'Textarea'">
+       TextArea := <Textarea name="textarea"></Textarea>
+    </div>
+
+</div>

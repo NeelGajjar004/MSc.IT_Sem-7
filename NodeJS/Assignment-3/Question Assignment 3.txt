@@ -1,0 +1,16 @@
+Question: 1) Angular
+Create Angular application with routing link assigned for following requirements:.
+- Display integer, sting, date data in a component.
+- Display array values in html list.
+- Display array in combo.
+- Take a combo with two values (textbox, textarea). Display textbox or textarea
+depending on selection of a combo.
+-Make another component for user input form with user’s personal details, take input
+and display data on submit.
+
+Question: 2) MEAN
+Design and develop shopping cart system.
+Backend - Products (CRUD) API in Express.
+Frontend
+- Call CRUD API
+- Display products in grid (3xn)
